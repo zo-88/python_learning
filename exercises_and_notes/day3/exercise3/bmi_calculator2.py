@@ -26,6 +26,8 @@ elif bmi < 25:
     print(f"{intro}{bmi}, you have a normal weight")
 elif bmi < 30:
     print(f"{intro}{bmi}, you're slightly overweight")
+elif bmi < 35:
+    print(f"{intro}{bmi}, you're overweight")
 else:
     print(f"{intro}{bmi}, you're clinically obese")
 
