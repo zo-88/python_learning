@@ -4,7 +4,7 @@
 
 ### Days
 
-1 . Band Name Generator 
-2 . Tip Calculator
+- Day 1: Band Name Generator 
+* Day 2: Tip Calculator
  
 
