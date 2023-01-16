@@ -10,12 +10,15 @@ if pizza_size == 's':
     bill += 15
 elif pizza_size == 'm':
     bill += 20
-elif pizza_size == 'l':
+else: 
     bill += 25
-if add_pepperoni == 'y' and pizza_size == 'm' or pizza_size == 'l':
-    bill += 3
-elif add_pepperoni == 'y':
-    bill += 2
+    
+if add_pepperoni == 'y':
+    if pizza_size == 's':
+        bill += 2
+    else:
+        bill += 3
+
 if extra_cheese == 'y':
     bill += 1
 
