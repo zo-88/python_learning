@@ -6,5 +6,8 @@
 
 - Day 1: Band Name Generator 
 * Day 2: Tip Calculator
+1. band name generator
+2. Tip Calculator
+3. 
  
 
