@@ -1,4 +1,5 @@
 #Control flow if/ else statements and conditional operators
+# logical operators 
 
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
@@ -12,6 +13,8 @@ if height >= 120:
   elif age <= 18:
       print("Youth tickets are $7")
       bill = 7
+  elif age >= 45 and age <= 55:
+      print("Everything is gonna be ok. Have a free ride on us")
   else:
       print("Adult tickets are $12")
       bill = 12
