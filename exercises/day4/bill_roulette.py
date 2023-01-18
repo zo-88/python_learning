@@ -7,13 +7,16 @@ name = input("Enter everyone's name separated by a comma: ")
 
 names = name.split(', ')
 
-print(names)
+#print(names)
 
 
-random_index = random.randint(0, len(names)- 1)
+#random_index = random.randint(0, len(names)- 1)
 
 
-person_picked = names[random_index].capitalize()
+#person_picked = names[random_index].capitalize()
+#using random choice() function instead
+
+person_picked = random.choice(names).capitalize()
 
 print(f"{person_picked} is going to buy the meal today!")
 
