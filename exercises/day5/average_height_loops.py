@@ -5,7 +5,7 @@ for n in range(0, len(student_heights)):
     student_heights[n] = int(student_heights[n])
                
 
-print(student_heights)
+#print(student_heights)
 
 num_of_students = 0
 
@@ -18,4 +18,4 @@ for height in student_heights:
     
 average_height = round(height_total/num_of_students)
 
-print(f"The average height is {average_height}")
+print(f"The average height is {average_height}cm")

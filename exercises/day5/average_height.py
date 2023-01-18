@@ -1,4 +1,4 @@
-# use a for loop to calculate the average height of a group of students
+# Calculate the average height of a group of students.
 
 student_heights = [180, 124, 165, 173, 189, 169, 146]
 
