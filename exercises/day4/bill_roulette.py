@@ -1,13 +1,19 @@
 # using random module and len() function
 import random
 
-people = ['Angela', 'Ben', 'Jenny', 'Micheal', 'Chloe']
-
-random_index = random.randint(0, len(people)- 1)
-
+print("lets play bill roulette, let's see who's going to pay the bill")
+name = input("Enter everyone's name separated by a comma: ")
 
 
-person = people[random_index]
+names = name.split(',')
 
-print(f"{person} is going to buy the meal today!")
+#print(names)
+
+
+random_index = random.randint(0, len(names)- 1)
+
+
+person_picked = names[random_index]
+
+print(f"{person_picked} is going to buy the meal today!")
 
