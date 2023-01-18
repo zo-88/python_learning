@@ -5,15 +5,15 @@ print("lets play bill roulette, let's see who's going to pay the bill")
 name = input("Enter everyone's name separated by a comma: ")
 
 
-names = name.split(',')
+names = name.split(', ')
 
-#print(names)
+print(names)
 
 
 random_index = random.randint(0, len(names)- 1)
 
 
-person_picked = names[random_index]
+person_picked = names[random_index].capitalize()
 
 print(f"{person_picked} is going to buy the meal today!")
 
