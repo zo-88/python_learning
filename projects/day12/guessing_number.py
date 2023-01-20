@@ -1,15 +1,26 @@
 # Guessing number game
 import random
 
+logo = '''
+   ___                          _____  _                 __                    _                 
+  / _ \ _   _   ___  ___  ___  /__   \| |__    ___    /\ \ \ _   _  _ __ ___  | |__    ___  _ __ 
+ / /_\/| | | | / _ \/ __|/ __|   / /\/| '_ \  / _ \  /  \/ /| | | || '_ ` _ \ | '_ \  / _ \| '__|
+/ /_\\ | |_| ||  __/\__ \\__ \  / /   | | | ||  __/ / /\  / | |_| || | | | | || |_) ||  __/| |   
+\____/  \__,_| \___||___/|___/  \/    |_| |_| \___| \_\ \/   \__,_||_| |_| |_||_.__/  \___||_|   
+                                                                                                 
+'''
+
 # 1: print welcome statement
+print(logo)
 print("Welcome to the Number Guessing Game!")
+#2 pick random number 
+computer_number = random.randint(1,101)
+print(f"answer is {computer_number}")
 
 
-# 2: choose difficulty :
+# 2: choose difficulty and assign difficulty :
 
 game_level = input("Choose a difficulty. Type 'easy' or 'hard: ").lower()
-
-# 3 assign difficult based on answer
 
 if game_level == 'easy':
     attempts = 10
@@ -20,11 +31,6 @@ else:
 #print(type(attempts))
 
 
-# generate a random number
-
-computer_number = random.randint(1,101)
-
-print(computer_number)
 
 
 def guess_the_number(times, num):
@@ -34,17 +40,17 @@ def guess_the_number(times, num):
         
         guess = int(input("Guess a number: "))
         if guess > num:
-            print("too high")
+            print("Too high")
             print("Guess again")
             times -= 1
             print(f"You have {times} attempts left.")
         elif guess < num:
-            print("too low")
+            print("Too low")
             print("Guess again")
             times -= 1
             print(f"You have {times} attempts left.")
         elif guess == num:
-            print("You won")
+            print(f"You won! The answer is {num}")
             guessed_number = True
     if times == 0:
         print("You lost")
